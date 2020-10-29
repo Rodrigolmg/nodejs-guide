@@ -1,0 +1,18 @@
+>> Event Loop <<
+
+- No início da iteração é verificado se há:
+
+1. Timers (setTimout, setInterval callbacks) para serem executados, após o timer tiver terminado
+2. Pending Callbacks (executa ações I/O, callbacks que foram adiadas)
+3. Poll (procura por novos eventos I/O e se possível executará essas callbacks, caso não consiga
+executá-las, serão adiadas). Também é procurado qualquer callback de Timer a ser executado e se houver
+alguma ele irá para a fase do Timer e as executará.
+4. Check (executará as callbacks do setImmediate)
+5. Close Callbacks (executará qualquer callback de evento de finalização)
+
+
+>> O que é Express.js? <<
+
+- O que é e porque usá-lo
+
+- Auxilía na lógica de servidor por ser complexa

@@ -1,0 +1,13 @@
+{
+  "name": "second-exercise",
+  "version": "1.0.0",
+  "description": "Second exercise from the nodejs guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "restart": "true",
+    "start-server": "nodemon app.js"
+  },
+  "author": "Rodrigo Godoy",
+  "license": "ISC"
+}
