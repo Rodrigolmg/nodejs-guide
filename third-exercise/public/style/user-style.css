@@ -1,0 +1,5 @@
+@import '../main.css';
+
+.colored-list-item li {
+    color: blue;
+}
